@@ -8,4 +8,6 @@ title: About
 # MIT License
 ---
 
-> **Note**: Add Markdown syntax content to file `tabs/about.md` and it will show up on this page.
+An CS Engineer, who started reverse engineering android frameworks, later developing custom roms, now working as Software Engineer @ [Logicsoft](http://www.logicsoft.co.in/)
+
+> Art, Simple, Android   
