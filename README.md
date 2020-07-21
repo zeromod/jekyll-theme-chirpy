@@ -47,15 +47,15 @@ To improve the writing experience, we need to use some script tools. If your mac
 
 * Debian
 
-```console
-$ sudo apt-get install coreutils
-```
+  ```console
+  $ sudo apt-get install coreutils
+  ```
 
 * macOS
 
-```console
-$ brew install coreutils
-```
+  ```console
+  $ brew install coreutils
+  ```
 
 
 ### Jekyll Plugins
@@ -66,7 +66,7 @@ $ brew install coreutils
 $ git clone git@github.com:USER/jekyll-theme-chirpy.git -b master
 ```
 
-and replace the `USER` above to your GitHub username.
+And replace the `USER` above to your GitHub username.
 
 The first time you run or build the project on local machine, perform the installation of Jekyll plugins. Go to the root of repo and run:
 
@@ -82,7 +82,7 @@ $ bundle install
 
 ### Directory Structure
 
-The main files and related brief introductions are listed below.
+The main files and related brief introductions are listed below:
 
 ```sh
 jekyll-theme-chirpy/
@@ -113,8 +113,9 @@ jekyll-theme-chirpy/
 
 As mentioned above, some files or directories should be removed from your repo:
 
-- .travis.yml
-- .github
+```terminal
+$ rm -rf .travis.yml .github _posts/* 
+```
 
 
 ### Configuration
@@ -164,7 +165,7 @@ Before the deployment begins, checkout the file `_config.yml` and make sure that
 
 By deploying the site in this way, you're allowed to push the source code directly to the remote.
 
-> **Note**: If you want to use any third-party Jekyll plugins that not in [this list](https://pages.github.com/versions/), stop reading the current approach and go to [*Option 2: Build locally*](#option-2-build-locally).
+> **Note**: If you want to use any third-party Jekyll plugins that not on [this list](https://pages.github.com/versions/), stop reading the current approach and go to [*Option 2: Build locally*](#option-2-build-locally).
 
 **1**. Rename the repository to:
 
@@ -173,27 +174,24 @@ By deploying the site in this way, you're allowed to push the source code direct
 |User or Organization | `<username>.github.io`|
 |Project| Any one except `<username>.github.io`, let's say `project`|
 
-**2**. Commit the changes of the repo first, then run the initialization script:
+**2**. Commit the changes of the repo first, then run the publish script:
 
-```terminal
-$ bash tools/init.sh
+```console
+$ bash tools/publish.sh
 ```
 
->**Note**: The *Recent Update* requires the posts' latest git-log date, so make sure the changes in `_posts` have been committed before running this command.
+> Please note that the *Recent Update* list requires the latest git-log date of posts, thus make sure the changes in `_posts` have been committed before running this command.
 
-it will automatically generates the *Latest Modified Date* and *Categories / Tags* page for the posts and submit a commit. Its output is similar to the following log:
+it will automatically generates the *Latest Modified Date* and *Categories / Tags* page for the posts and submit a commit, and then push to `origin/master`. Its output is similar to the following log:
 
 ```terminal
 [INFO] Success to update lastmod for 4 post(s).
 [INFO] Succeed! 3 category-pages created.
 [INFO] Succeed! 4 tag-pages created.
-[Automation] Updated the Categories, Tags, Lastmod for post(s).
- 11 files changed, 46 insertions(+), 3 deletions(-)
- ...
-Updated the Categories, Tags, Lastmod for post(s).
+[INFO] Published successfully!
 ```
 
-**3**. Push the changes to `origin/master` then go to GitHub website and enable GitHub Pages service for the repo.
+**3**. Go to GitHub website and enable GitHub Pages service for the repo.
 
 **4**. Check it out:
 
@@ -205,7 +203,7 @@ Updated the Categories, Tags, Lastmod for post(s).
 
 #### Option 2: Build Locally
 
-For security reasons, GitHub Pages runs on `safe` mode, which means the third-party Jekyll plugins or custom scripts won't work. If you want to use any another plugins that not in the [whitelist](https://pages.github.com/versions/), **you have to generate the site locally rather than on GitHub Pages**.
+For security reasons, GitHub Pages runs on `safe` mode, which means the third-party Jekyll plugins or custom scripts won't work. If you want to use any other plugin that not on the [whitelist](https://pages.github.com/versions/), **you have to generate the site locally rather than on GitHub Pages**.
 
 **1**. Browse to GitHub website, create a brand new repo named: 
 

@@ -185,6 +185,7 @@ exclude:
   - tools
   - docs
   - README.md
+  - LICENSE
 
 sitemap_exclude:  # Sitemap will exclude the following items.
   fuzzy:

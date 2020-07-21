@@ -13,7 +13,7 @@
 
 {% if site.google_analytics.pv.enabled %}
 
-  {% include_relative data/pv-data.js %}
+  {% include_relative _pv-config.js %}
 
   {% include_relative _utils/pageviews.js %}
 
