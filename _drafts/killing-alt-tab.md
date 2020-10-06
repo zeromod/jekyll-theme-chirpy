@@ -16,7 +16,9 @@ While most of the window managers provides various functionality, they are targe
 
 ### The Solution
 
-Solutions to this problem is actually simpler than it looks, with these great tools
+One of the popular solution is [Tiling window manager](https://en.wikipedia.org/wiki/Tiling_window_manager), a tool which arranges windows in you're workspace automatically. But it will take time to get used to it and needs practice.
+
+Another solutions to this problem is actually simpler than it looks, with these great tools
 
 - [AutoKey](https://github.com/autokey/autokey) for Linux based systems.
 - [AutoHotKey](https://github.com/AutoHotkey/AutoHotkey) for Microsoft Windows.
@@ -44,6 +46,8 @@ Start writing scripts and attach a *Hot Key* to your script.
 We will be also using autokey + [jumpapp](https://github.com/mkropat/jumpapp) for window switching, jumpapp is a simple wrapper around [wmctrl](http://tripie.sweb.cz/utils/wmctrl/).
 
 ### Showcase
+
+*Note : All these showcase's outcome can be achieved also via [AutoHotKey](https://github.com/AutoHotkey/AutoHotkey)*
 
 #### Window switch
 
