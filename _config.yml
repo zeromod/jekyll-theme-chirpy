@@ -91,6 +91,7 @@ markdown: kramdown
 highlighter: rouge
 
 kramdown:
+  auto_ids: true
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
