@@ -4,15 +4,13 @@ title: Killing Alt + Tab
 date: 2020-07-23 08:56 +0530
 ---
 
-We send emails. We surf the web. We post to Facebook. We tweet. We write. We code. We chat. We journal. We pay the bills. We send invoices. We learn. We research.
-
-Personal computing took off in 1984, when Apple released the Macintosh and brought the mouse to everyday users. Graphic user interfaces were revolutionary, but if you want to maximize your proficiency with the computer, using the mouse/trackpad isn’t enough.
+Personal computing became viral when [Xerox](https://en.wikipedia.org/wiki/PARC_(company)) invented GUI(Graphical User Interface) (Yes not Apple or Microsoft) with their [Xerox Alto](https://en.wikipedia.org/wiki/Xerox_Alto), which is also the first modern computer to utilise a [mouse](https://en.wikipedia.org/wiki/Computer_mouse) and created the metaphor [Desktop](https://en.wikipedia.org/wiki/Desktop_metaphor). Productivity with personal computers is an interesting area which we all wished we had. 
 
 ### The Problem
 
-The ability to run multiple programs simultaneously is backed by [Window Manger](https://en.wikipedia.org/wiki/Window_manager#:~:text=A%20window%20manager%20is%20system,help%20provide%20a%20desktop%20environment.) (one of the system software). Most Operating Systems provides their own implementation of *Window Manager*, like famous [X window system](https://en.wikipedia.org/wiki/X_Window_System) and [Wayland](https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)) for UNIX based operating systems.
+The ability to run multiple programs simultaneously is backed by [Window Manger](https://en.wikipedia.org/wiki/Window_manager#:~:text=A%20window%20manager%20is%20system,help%20provide%20a%20desktop%20environment.) (one of the system software). Most Operating Systems provides their own implementation of *Window Manager*, like the popular [X window system](https://en.wikipedia.org/wiki/X_Window_System) and [Wayland](https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)) for UNIX based operating systems.
 
-User Inputs of a typical computing systems are *Keyboard* and *Mouse*. While both of them excels at their use cases, keyboards provide more functionalities. Performing multiple tasks simultaneously by a user requires more effort. The main problem here is *Context Switching* (switching between programs). It should be seamless, less distracting and convenient.
+User Inputs of a typical computing systems are ***Keyboard*** and ***Mouse***. While both of them excels at their use cases, keyboards provide more functionalities. Performing multiple tasks simultaneously by a user requires more effort. The main problem here is *Context Switching* (switching between programs). It should be seamless, less distracting and convenient.
 
 While most of the window managers provides various functionality, they are targeted at common users (*User-Friendly*). Which is obviously not suitable for power users. The biggest pain for power users is ***Alt + Tab***, a keybinding (keyboard shortcut) for switching between windows (programs). The *Context Switching* here is really heavy, distracting and is counter productive.
 
