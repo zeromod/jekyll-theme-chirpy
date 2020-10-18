@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Killing Alt + Tab
-date: 2020-07-23 08:56 +0530
+date: 2020-10-18 07:00 +0530
 ---
-
 Personal computing became viral when [Xerox](https://en.wikipedia.org/wiki/PARC_(company)) invented GUI(Graphical User Interface) (Yes not Apple or Microsoft) with their [Xerox Alto](https://en.wikipedia.org/wiki/Xerox_Alto), which is also the first modern computer to utilise a [mouse](https://en.wikipedia.org/wiki/Computer_mouse) and created the metaphor [Desktop](https://en.wikipedia.org/wiki/Desktop_metaphor). Productivity with personal computers is an interesting area which we all wished we had. 
 
 ### The Problem
@@ -208,3 +207,9 @@ system.exec_command(command, getOutput=False)
 scrcpy supports setting custom window title (`--window-title`), so we set the `device_serial` as window title, then use `wmctrl -lx`  to get list of window title, then we will have currently active `device_serial` , so we can simply skip scrcpy window for devices already have a scrcpy window.
 
 ![scrcpy_switch](/assets/img/posts/scrcpy_switch.gif)
+
+
+
+### Credits
+
+Thanks to [Shrayas](http://shrayas.com/) for reviewing this post.
