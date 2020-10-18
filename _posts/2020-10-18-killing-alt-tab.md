@@ -2,6 +2,8 @@
 layout: post
 title: Killing Alt + Tab
 date: 2020-10-18 07:00 +0530
+categories: [Productivity, utility]
+tags: [tips]
 ---
 Personal computing became viral when [Xerox](https://en.wikipedia.org/wiki/PARC_(company)) invented GUI(Graphical User Interface) (Yes not Apple or Microsoft) with their [Xerox Alto](https://en.wikipedia.org/wiki/Xerox_Alto), which is also the first modern computer to utilise a [mouse](https://en.wikipedia.org/wiki/Computer_mouse) and created the metaphor [Desktop](https://en.wikipedia.org/wiki/Desktop_metaphor). Productivity with personal computers is an interesting area which we all wished we had. 
 
