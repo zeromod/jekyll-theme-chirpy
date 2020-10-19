@@ -7,7 +7,7 @@ tags: [tips]
 ---
 Personal computing became viral when [Xerox](https://en.wikipedia.org/wiki/PARC_(company)) invented GUI(Graphical User Interface) (Yes not Apple or Microsoft) with their [Xerox Alto](https://en.wikipedia.org/wiki/Xerox_Alto), which is also the first modern computer to utilise a [mouse](https://en.wikipedia.org/wiki/Computer_mouse) and created the metaphor [Desktop](https://en.wikipedia.org/wiki/Desktop_metaphor). Productivity with personal computers is an interesting area which we all wished we had. 
 
-### The Problem
+## The Problem
 
 The ability to run multiple programs simultaneously is backed by [Window Manger](https://en.wikipedia.org/wiki/Window_manager#:~:text=A%20window%20manager%20is%20system,help%20provide%20a%20desktop%20environment.) (one of the system software). Most Operating Systems provides their own implementation of *Window Manager*, like the popular [X window system](https://en.wikipedia.org/wiki/X_Window_System) and [Wayland](https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)) for UNIX based operating systems.
 
@@ -15,7 +15,7 @@ User Inputs of a typical computing systems are ***Keyboard*** and ***Mouse***. W
 
 While most of the window managers provides various functionality, they are targeted at common users (*User-Friendly*). Which is obviously not suitable for power users. The biggest pain for power users is ***Alt + Tab***, a keybinding (keyboard shortcut) for switching between windows (programs). The *Context Switching* here is really heavy, distracting and is counter productive.
 
-### The Solution
+## The Solution
 
 One of the popular solution is [Tiling window manager](https://en.wikipedia.org/wiki/Tiling_window_manager), a tool which arranges windows in you're workspace automatically. But it will take time to get used to it and needs practice.
 
@@ -38,7 +38,7 @@ Getting started to these tools is pretty simple, it took me ~10 minutes to setup
 
 I am using Ubuntu as my daily driver, so moving forward, we will be looking more into [AutoKey](https://github.com/autokey/autokey).
 
-### Autokey setup
+## Autokey setup
 
 Installing Autokey is pretty straight forward and have detailed [documentation](https://github.com/autokey/autokey/wiki/Installing#contents). Once the setup is complete, you can use the GUI to create the scripts. With Autokey every script is itself a python program, so if you're already familiar with python you can do wonders with Autokey, or if you're like me, new to python you can get started with writing script for switching between windows pretty easily.
 
@@ -52,11 +52,11 @@ We will be also using autokey + [jumpapp](https://github.com/mkropat/jumpapp) fo
 
 wmctrl is a powerful tool and have to have complete control over windows. One of the great use case for wmctrl is [scrpcy-switch](#scrcpy) 
 
-### Showcase
+## Showcase
 
 *Note : All these showcase's outcome can be achieved also via [AutoHotKey](https://github.com/AutoHotkey/AutoHotkey)*
 
-#### Window switch
+### Window switch
 
 Switching between windows is a simple script with just one line command, most of the heavy work is carried over by jumpapp
 
@@ -86,7 +86,7 @@ $ wmctrl -lx
 
 You can notice name for Chrome is `google-chrome`, and this is what you need to use in autokey scripts. These names are know as `WM_CLASS`.
 
-#### Global google search
+### Global google search
 
 Being able to search any selected text by activating a python script (below) everytime I pressed a set of keyboard buttons.
 
@@ -101,7 +101,7 @@ webbrowser.open_new_tab(base+phrase)
 
 These can be useful in many ways like getting meaning for a word, google search on error messages, etc.
 
-#### Typora
+### Typora
 
 I like when I can see the preview of the markdown I am writing, which most of the programs lacks really bad, like [Trello](https://trello.com/en). So this simple autokey script solves this issue by launching the content in [typora](https://typora.io/) for me,
 
@@ -124,7 +124,7 @@ The idea is to copy (to [clipboard](https://en.wikipedia.org/wiki/Clipboard_(com
 
 > I use Typora to write these blogs
 
-#### Jitsi
+### Jitsi
 
 We use [jitsi meet](https://jitsi.org/jitsi-meet/) intensively for having meetings, pair programming and discussions. It is a web app, were need to launch a web browser and enter the link to join the room. We use jitsi daily and it was repetitive task to getting into the room, so we have written a autokey script to simply the process.
 
@@ -171,7 +171,7 @@ Jitsi doesn't have any GUI to remember the frequently used rooms, this can be re
 
 ![jitsi-blog](/assets/img/posts/jitsi-blog.gif)
 
-#### scrcpy
+### scrcpy
 
 Being an android developer, I will be testing the apps in an real device very often and [scrcpy](https://github.com/Genymobile/scrcpy)  is a tool which casts the screen you're system and lets you control the device from the system.
 

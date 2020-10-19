@@ -16,7 +16,7 @@ While compose is concentrated on a UI Toolkit for Android, there was a mysteriou
 
 
 
-### Trying the mysterious commit
+## Trying the mysterious commit
 
 So I was interested to experiment this commit made in [AOSP gerrit](https://android-review.googlesource.com/c/platform/frameworks/support/+/1290729), which includes sample for running desktop app via Compose. Compose was developed as part of framework/base repo in the gerrit.
 
@@ -38,19 +38,19 @@ So with a little hack (Using skiko lib instead of skija) , I was able to run the
 
 > Note : Created a new Android project and copy pasted the same compose fun to run in Android.
 
-###### Setup
+### Setup
 
 -  Start by setting up repository using a this [guide](https://cs.android.com/androidx/platform/frameworks/support).
 - Once the `repo sync` is over, run `cd frameworks/support/ui/`
 - Here, it is recommended to run custom build of Android Studio provided within this repository. Run `./studiow` to start custom build of Android Studio.
 - Let Android Studio sync the project.
 
-###### Using skiko lib instead of skija
+### Using skiko lib instead of skija
 
 - Build and publish skiko to local maven using the instructions [here](https://github.com/JetBrains/skiko) 
 - Include skiko as dependency in `buiild.gradle(ui-desktop)` as `api("org.jetbrains.skiko:skiko-jvm-runtime-linux:0.1-SNAPSHOT")`
 - Modify `androidx/ui/desktop/ComposeInit.kt` from `Library.load("/", "skija")` to `Library.load("/", "skiko")`
 
-###### Run
+### Run
 
 - Run the gradle task `run` in compose-desktop-sample
